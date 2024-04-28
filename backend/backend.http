@@ -1,0 +1,25 @@
+@backend_HostAddress = http://localhost:5038
+
+###
+
+GET {{backend_HostAddress}}/users
+Accept: application/json
+
+###
+
+POST {{backend_HostAddress}}/users
+Content-Type: application/json
+
+{
+  "fullName": "Rodrigo Mota",
+  "cpF_CNPJ": "12345678910",
+  "email": "user@example.com",
+  "phoneNumber": "7135658522",
+  "zipcode": "41760160",
+  "street": "Rua Coronel Durval Mattos",
+  "addressNumber": "1263",
+  "addressComplement": "",
+  "neighborhood": "Costa Azul",
+  "city": "Salvador",
+  "state": "BA"
+}
